@@ -1,0 +1,28 @@
+{
+  "name": "Soft Canvas",
+  "dark": false,
+  "colors": {
+    "background": "#F7F6E5",
+    "surface": "#FFFFFF",
+    "surfaceRaised": "#FFFDF2",
+    "chatBackground": "#FBFAEE",
+    "border": "#E3E1CC",
+    "accent": "#DA4848",
+    "accentMuted": "#36064D",
+    "textPrimary": "#2B2438",
+    "textSecondary": "#5A5470",
+    "textMuted": "#8A8478",
+    "unreadBadge": "#DA4848",
+    "unreadDot": "#2B2438",
+    "mentionHighlight": "#EAF6F7",
+    "mentionBar": "#76D2DB",
+    "traitCitation": "#D8D5BE",
+    "danger": "#DA4848",
+    "warning": "#B5710A",
+    "success": "#2E7D46",
+    "scrimAlpha": 0.45
+  },
+  "images": {
+    "chatBackgroundVeil": 0.6
+  }
+}

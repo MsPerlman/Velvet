@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+
+  <Bundle Name="Velvet"
+          Version="$(var.Version)"
+          Manufacturer="Velvet"
+          UpgradeCode="0f3c7a11-9d2b-4a1e-8f55-6c3d2b7e4a90"
+          IconSourceFile="velvet.ico"
+          Compressed="yes"
+          DisableModify="no">
+
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
+      <bal:WixStandardBootstrapperApplication
+          ThemeFile="velvet.thm"
+          LocalizationFile="$(var.Loc)"
+          LicenseUrl=""
+          ShowVersion="yes"
+          SuppressOptionsUI="no" />
+
+      <Payload SourceFile="b-continuer.png" />
+      <Payload SourceFile="b-desinstaller.png" />
+      <Payload SourceFile="b-installer.png" />
+      <Payload SourceFile="b-lancer.png" />
+      <Payload SourceFile="b-redemarrer.png" />
+      <Payload SourceFile="b-valider.png" />
+      <Payload SourceFile="bandeau-00.png" />
+      <Payload SourceFile="bandeau-01.png" />
+      <Payload SourceFile="bandeau-02.png" />
+      <Payload SourceFile="bandeau-03.png" />
+      <Payload SourceFile="bandeau-04.png" />
+      <Payload SourceFile="bandeau-05.png" />
+      <Payload SourceFile="bandeau-06.png" />
+      <Payload SourceFile="bandeau-07.png" />
+      <Payload SourceFile="bandeau-08.png" />
+      <Payload SourceFile="bandeau-09.png" />
+      <Payload SourceFile="bandeau-10.png" />
+      <Payload SourceFile="bandeau-11.png" />
+      <Payload SourceFile="bandeau-12.png" />
+      <Payload SourceFile="bandeau-13.png" />
+      <Payload SourceFile="bandeau-14.png" />
+      <Payload SourceFile="bandeau-15.png" />
+      <Payload SourceFile="bandeau-16.png" />
+      <Payload SourceFile="bandeau-17.png" />
+      <Payload SourceFile="bandeau-18.png" />
+      <Payload SourceFile="bandeau-19.png" />
+      <Payload SourceFile="bandeau-20.png" />
+      <Payload SourceFile="bandeau-21.png" />
+      <Payload SourceFile="bandeau-22.png" />
+      <Payload SourceFile="bandeau-23.png" />
+      <Payload SourceFile="bandeau-24.png" />
+      <Payload SourceFile="bandeau-25.png" />
+      <Payload SourceFile="bandeau-26.png" />
+      <Payload SourceFile="bandeau-27.png" />
+      <Payload SourceFile="bandeau-28.png" />
+      <Payload SourceFile="bandeau-29.png" />
+      <Payload SourceFile="bandeau-30.png" />
+      <Payload SourceFile="bandeau-31.png" />
+      <Payload SourceFile="bandeau-32.png" />
+      <Payload SourceFile="bandeau-33.png" />
+      <Payload SourceFile="bandeau-34.png" />
+      <Payload SourceFile="cadre-bas.png" />
+      <Payload SourceFile="d-annuler.png" />
+      <Payload SourceFile="d-fermer.png" />
+      <Payload SourceFile="d-options.png" />
+      <Payload SourceFile="d-parcourir.png" />
+      <Payload SourceFile="d-reparer.png" />
+      <Payload SourceFile="d-retour.png" />
+      <Payload SourceFile="deco-haut.png" />
+
+      <Payload SourceFile="fond.png" />
+      <Payload SourceFile="progres.png" />
+      <Payload SourceFile="rail-droit.png" />
+      <Payload SourceFile="rail-gauche.png" />
+      <Payload SourceFile="t-accueil.png" />
+      <Payload SourceFile="t-deja.png" />
+      <Payload SourceFile="t-fin.png" />
+      <Payload SourceFile="t-options.png" />
+      <Payload SourceFile="t-progres.png" />
+      <Payload SourceFile="t-rate.png" />
+    </BootstrapperApplicationRef>
+
+    <Variable Name="InstallFolder" Type="string" Value="[LocalAppDataFolder]VelvetDesk" />
+
+    <Variable Name="LaunchTarget" Type="string" Value="[InstallFolder]\VelvetDesk.exe" />
+
+    <Chain>
+      <MsiPackage Id="VelvetDesk"
+                  SourceFile="$(var.Msi)"
+                  Compressed="yes"
+                  Vital="yes"
+                  DisplayInternalUI="no">
+        <MsiProperty Name="INSTALLDIR" Value="[InstallFolder]" />
+      </MsiPackage>
+    </Chain>
+  </Bundle>
+</Wix>

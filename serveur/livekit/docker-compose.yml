@@ -1,0 +1,36 @@
+
+services:
+  livekit:
+    image: livekit/livekit-server:${LIVEKIT_VERSION}
+    restart: unless-stopped
+    command: --config /etc/livekit.yaml
+    user: "1000:1000"
+    network_mode: host
+    environment:
+      - "LIVEKIT_KEYS=${LIVEKIT_KEY}: ${LIVEKIT_SECRET}"
+    volumes:
+      - ./livekit.yaml:/etc/livekit.yaml:ro
+    security_opt:
+      - "no-new-privileges:true"
+    cap_drop:
+      - ALL
+    read_only: true
+    tmpfs:
+      - /tmp
+
+  lk-jwt-service:
+    image: ghcr.io/element-hq/lk-jwt-service:${JWT_VERSION}
+    restart: unless-stopped
+    environment:
+      - "LIVEKIT_JWT_BIND=:8080"
+      - "LIVEKIT_URL=wss://livekit.exemple.org"
+      - "LIVEKIT_KEY=${LIVEKIT_KEY}"
+      - "LIVEKIT_SECRET=${LIVEKIT_SECRET}"
+      - "LIVEKIT_FULL_ACCESS_HOMESERVERS=exemple.org"
+      - "LIVEKIT_CS_API_URL_OVERRIDES=exemple.org=https://exemple.org"
+    ports:
+      - "${PI_LAN_IP}:8080:8080"
+    security_opt:
+      - "no-new-privileges:true"
+    cap_drop:
+      - ALL

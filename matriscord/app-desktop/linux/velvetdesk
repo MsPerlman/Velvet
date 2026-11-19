@@ -1,0 +1,8 @@
+#!/bin/sh
+# starts velvetdesk from wherever the archive was unpacked
+ici=$(dirname "$(readlink -f "$0")")
+exec "$ici/jre/bin/java" \
+  -Djna.library.path="$ici/natives" \
+  -Dvelvet.lanceur="$ici/velvetdesk" \
+  -Dsun.java2d.uiScale.enabled=true \
+  -cp "$ici/lib/*" li.velvetchat.desk.MainKt "$@"

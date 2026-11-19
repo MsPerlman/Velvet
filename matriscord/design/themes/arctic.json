@@ -1,0 +1,25 @@
+{
+  "name": "Deep Arctic",
+  "dark": true,
+  "colors": {
+    "background": "#0B3337",
+    "surface": "#0F464B",
+    "surfaceRaised": "#16585E",
+    "chatBackground": "#0A2C2F",
+    "border": "#1B5C62",
+    "accent": "#F4EC9B",
+    "accentMuted": "#C9BE6C",
+    "textPrimary": "#C9E0DA",
+    "textSecondary": "#9FC0B9",
+    "textMuted": "#6E918B",
+    "unreadBadge": "#F4EC9B",
+    "unreadDot": "#C9E0DA",
+    "mentionHighlight": "#123F3A",
+    "mentionBar": "#F4EC9B",
+    "traitCitation": "#1F5F64",
+    "danger": "#E0575B",
+    "warning": "#F4EC9B",
+    "success": "#4FBF8B",
+    "scrimAlpha": 0.7
+  }
+}

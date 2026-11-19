@@ -1,0 +1,5 @@
+
+app_service_config_files:
+  - /data/mautrix-discord-registration.yaml
+
+#   msc2409_to_device_messages: true

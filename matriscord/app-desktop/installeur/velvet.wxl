@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<WixLocalization Culture="fr-fr" Language="1036" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="Caption">Velvet — installation</String>
+  <String Id="Title">Velvet</String>
+
+  <String Id="InstallHeader">Bienvenue, âme de passage.</String>
+  <String Id="PresentationTexte">Velvet s'installe dans ton compte. Pas de mot de passe administrateur à taper, et il n'y aura rien d'autre à télécharger après : tout est déjà dans ce fichier.</String>
+  <String Id="OuTexte">Compte environ 400 Mo sur le disque, et un raccourci sur le bureau.</String>
+  <String Id="InstallMessage">Velvet va s'installer sur cet ordinateur.</String>
+  <String Id="InstallVersion">Version [WixBundleVersion]</String>
+  <String Id="ConfirmCancelMessage">On laisse tomber ?</String>
+  <String Id="ExecuteUpgradeRelatedBundleMessage">Version précédente</String>
+
+  <String Id="HelpHeader">Aide</String>
+  <String Id="HelpText">/install | /repair | /uninstall | /layout [dossier] — installe, répare, retire, ou dépose une copie complète dans le dossier. Installer est le défaut.
+
+/passive | /quiet — interface réduite sans question, ou aucune interface du tout.
+
+/norestart — n'essaie jamais de redémarrer.
+/log fichier.txt — écrit le journal là. Sinon il va dans %TEMP%.</String>
+  <String Id="HelpCloseButton">&amp;Fermer</String>
+
+  <String Id="InstallLicenseLinkText">Velvet est sous &lt;a href="#"&gt;licence libre&lt;/a&gt;.</String>
+  <String Id="InstallAcceptCheckbox">J'&amp;accepte les termes de la licence</String>
+  <String Id="InstallOptionsButton">&amp;Avancé</String>
+  <String Id="InstallInstallButton">&amp;Installer</String>
+  <String Id="InstallCloseButton">&amp;Annuler</String>
+
+  <String Id="OptionsHeader">Installation avancée</String>
+  <String Id="OptionsLocationLabel">Dossier d'installation</String>
+  <String Id="OptionsRaccourciBureau">Mettre un raccourci sur le bureau</String>
+  <String Id="OptionsRaccourciMenu">Mettre un raccourci au menu Démarrer</String>
+  <String Id="OptionsNote">Le dossier est dans ton compte : c'est pour ça qu'on ne te demande jamais de mot de passe administrateur.</String>
+  <String Id="OptionsBrowseButton">&amp;Parcourir</String>
+  <String Id="OptionsOkButton">&amp;Valider</String>
+  <String Id="OptionsCancelButton">&amp;Retour</String>
+
+  <String Id="ProgressHeader">Ça descend…</String>
+  <String Id="ProgressLabel">En cours :</String>
+  <String Id="OverallProgressPackageText">Préparation…</String>
+  <String Id="ProgressNote">C'est un peu long parce que Velvet emporte son propre Java et de quoi partager ton écran. Une minute, grand maximum.</String>
+  <String Id="ProgressCancelButton">&amp;Annuler</String>
+
+  <String Id="ModifyHeader">Velvet est déjà là</String>
+  <String Id="ModifyNote">Tu peux la réparer si elle fait des siennes, ou la retirer. Tes messages ne sont pas sur cet ordinateur, ils sont sur le serveur : les enlever d'ici ne les efface pas.</String>
+  <String Id="ModifyRepairButton">&amp;Réparer</String>
+  <String Id="ModifyUninstallButton">&amp;Désinstaller</String>
+  <String Id="ModifyCloseButton">&amp;Fermer</String>
+
+  <String Id="SuccessHeader">C'est bon.</String>
+  <String Id="SuccessInstallHeader">Velvet est installée.</String>
+  <String Id="SuccessRepairHeader">Velvet est réparée.</String>
+  <String Id="SuccessUninstallHeader">Velvet est partie.</String>
+  <String Id="SuccessNote">Tu la trouveras sur le bureau et au menu Démarrer.</String>
+  <String Id="SuccessServeurLink">Velvet chez toi, sur ta propre machine : velvet-chat.li/server</String>
+  <String Id="SuccessLaunchButton">&amp;Lancer Velvet</String>
+  <String Id="SuccessRestartText">Redémarre l'ordinateur pour finir.</String>
+  <String Id="SuccessRestartButton">&amp;Redémarrer</String>
+  <String Id="SuccessCloseButton">&amp;Fermer</String>
+
+  <String Id="FailureHeader">Ça a raté.</String>
+  <String Id="FailureInstallHeader">Ça a raté.</String>
+  <String Id="FailureUninstallHeader">Le retrait a raté.</String>
+  <String Id="FailureRepairHeader">La réparation a raté.</String>
+  <String Id="FailureHyperlinkLogText">Quelque chose s'est mis en travers. Le détail est dans le &lt;a href="#"&gt;journal&lt;/a&gt;.</String>
+  <String Id="FailureRestartText">Redémarre l'ordinateur pour finir l'annulation.</String>
+  <String Id="FailureRestartButton">&amp;Redémarrer</String>
+  <String Id="FailureCloseButton">&amp;Fermer</String>
+
+  <String Id="FilesInUseHeader">Velvet est ouverte</String>
+  <String Id="FilesInUseLabel">Ces programmes tiennent des fichiers qu'il faut remplacer :</String>
+  <String Id="FilesInUseCloseRadioButton">Les &amp;fermer, et les relancer après.</String>
+  <String Id="FilesInUseDontCloseRadioButton">Ne rien fermer. Il faudra &amp;redémarrer.</String>
+  <String Id="FilesInUseOkButton">&amp;Continuer</String>
+  <String Id="FilesInUseCancelButton">&amp;Annuler</String>
+
+  <String Id="ErrorFailNoActionReboot">Rien n'a été fait : il faut redémarrer d'abord.</String>
+</WixLocalization>

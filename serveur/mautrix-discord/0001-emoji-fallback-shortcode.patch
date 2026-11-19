@@ -1,0 +1,17 @@
+diff --git a/formatter_tag.go b/formatter_tag.go
+index fb7f741..d711b07 100644
+--- a/formatter_tag.go
++++ b/formatter_tag.go
+@@ -306,6 +306,12 @@ func (r *discordTagHTMLRenderer) renderDiscordMention(w util.BufWriter, source [
+ 			_, _ = fmt.Fprintf(w, `<img %[3]s src="%[1]s" alt="%[2]s" title="%[2]s" height="32"/>`, reactionMXC.String(), node.name, attrs)
+ 			return
+ 		}
++		// Reupload failed — typically an emoji whose source server is gone / dead CDN
++		// link, common when importing OLD DMs. Fall back to the clean :shortcode: instead
++		// of leaking the raw <:name:id> Discord markup (that's what the default
++		// Stringer fall-through below would write). node.name already carries the colons.
++		_, _ = w.WriteString(node.name)
++		return
+ 	case *astDiscordTimestamp:
+ 		ts := time.Unix(node.timestamp, 0).UTC()
+ 		var formatted string

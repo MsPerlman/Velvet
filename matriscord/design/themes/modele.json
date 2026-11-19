@@ -1,0 +1,112 @@
+{
+  "name": "Velvet Curfew",
+  "dark": true,
+  "colors": {
+    "accent": "#7A3D4C",
+    "accentMuted": "#4B262F",
+    "background": "#151311",
+    "surface": "#1C1917",
+    "surfaceRaised": "#2A2321",
+    "border": "#2E2724",
+    "textPrimary": "#EED3BA",
+    "textSecondary": "#C4AC97",
+    "textMuted": "#8C7A6C",
+    "danger": "#E0575B",
+    "warning": "#D9A441",
+    "success": "#3FB950",
+    "unreadBadge": "#7A3D4C",
+    "mentionHighlight": "#2A211A",
+    "mentionBar": "#EED3BA",
+    "traitCitation": "#3A322E",
+    "scrimAlpha": 0.7,
+    "chatBackground": "#131110",
+    "unreadDot": "#EED3BA"
+  },
+  "radii": {
+    "small": 4,
+    "medium": 8,
+    "large": 16,
+    "serverIcon": 24,
+    "serverIconSelected": 16
+  },
+  "spacing": {
+    "xs": 4,
+    "s": 8,
+    "m": 12,
+    "l": 16,
+    "xl": 20,
+    "ecran": 28
+  },
+  "tailles": {
+    "iconeServeur": 48,
+    "badge": 16,
+    "badgeTexte": 10,
+    "boutonEnvoi": 40
+  },
+  "typography": {
+    "bodyFamily": "Inter",
+    "tabularFamily": "Inter",
+    "bodySize": 16,
+    "bodyLineHeight": 20,
+    "headingSize": 17,
+    "captionSize": 12,
+    "codeFamily": "JetBrains Mono",
+    "codeSize": 13,
+    "heading1Scale": 1.5,
+    "heading2Scale": 1.25,
+    "heading3Scale": 1.0,
+    "subtextScale": 0.8,
+    "jumboEmojiScale": 2.5,
+    "jumboEmojiMax": 27
+  },
+  "density": {
+    "serverRailWidth": 72,
+    "channelListWidth": 240,
+    "memberListWidth": 240,
+    "messageVerticalPadding": 2,
+    "messageGroupSpacing": 12,
+    "channelRowHeight": 34,
+    "messageGroupWindowMs": 420000,
+    "messageAvatarSize": 40,
+    "quickReactionBarHeight": 44,
+    "swipeReplyThresholdDp": 64,
+    "conversationPeekWidth": 56,
+    "flingVelocityDpS": 400,
+    "drawerOpenFraction": 0.3,
+    "memberDrawerWidth": 280
+  },
+  "motion": {
+    "fastMs": 140,
+    "normalMs": 260,
+    "slowMs": 380,
+    "enterCurve": {
+      "x1": 0.05,
+      "y1": 0.7,
+      "x2": 0.1,
+      "y2": 1.0
+    },
+    "exitCurve": {
+      "x1": 0.3,
+      "y1": 0.0,
+      "x2": 0.8,
+      "y2": 0.15
+    },
+    "springDamping": 0.72,
+    "springStiffness": 260.0,
+    "drawerSpringDamping": 0.92,
+    "drawerSpringStiffness": 800.0,
+    "pageSlideMs": 250,
+    "pageSlideCurve": {
+      "x1": 0.05,
+      "y1": 0.35,
+      "x2": 0.35,
+      "y2": 1.0
+    },
+    "enabled": true
+  },
+  "images": {
+    "chatBackground": "",
+    "chatBackgroundVeil": 0.35,
+    "dmIcon": ""
+  }
+}

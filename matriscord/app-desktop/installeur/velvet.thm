@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Theme xmlns="http://wixtoolset.org/schemas/thmutil/2010" ImageFile="fond.png">
+  <Window Width="620" Height="460" HexStyle="920a0000" FontId="0">#(loc.Caption)</Window>
+
+  <Font Id="0" Height="-12" Weight="400" Foreground="F3E9DC" Background="0A0102">Segoe UI</Font>
+
+  <Font Id="1" Height="-13" Weight="400" Foreground="F3E9DC">Segoe UI</Font>
+  <Font Id="2" Height="-12" Weight="400" Foreground="B59B97">Segoe UI</Font>
+  <Font Id="3" Height="-19" Weight="600" Foreground="F3E9DC">Segoe UI</Font>
+  <Font Id="4" Height="-12" Weight="400" Foreground="F5EF00" Background="0A0102" Underline="yes">Segoe UI</Font>
+  <Font Id="5" Height="-12" Weight="400" Foreground="FF5A66" Background="0A0102">Segoe UI</Font>
+
+  <Font Id="7" Height="-13" Weight="400" Foreground="F3E9DC" Background="0A0102">Segoe UI</Font>
+  <Font Id="8" Height="-12" Weight="400" Foreground="B59B97" Background="0A0102">Segoe UI</Font>
+
+  <Font Id="9" Height="-13" Weight="400" Foreground="F5EF00" Background="0A0102" Underline="yes">Segoe UI</Font>
+  <Font Id="10" Height="-13" Weight="400" Foreground="FFFFFF" Background="0A0102" Underline="yes">Segoe UI</Font>
+
+  <Font Id="6" Height="-12" Weight="400" Foreground="F3E9DC" Background="2A0406">Segoe UI</Font>
+
+  <Page Name="Help">
+    <Image X="24" Y="160" Width="572" Height="30" ImageFile="t-accueil.png"/>
+
+    <Billboard X="0" Y="0" Width="620" Height="31" Interval="55" Loop="yes">
+      <Image ImageFile="bandeau-00.png"/>
+      <Image ImageFile="bandeau-01.png"/>
+      <Image ImageFile="bandeau-02.png"/>
+      <Image ImageFile="bandeau-03.png"/>
+      <Image ImageFile="bandeau-04.png"/>
+      <Image ImageFile="bandeau-05.png"/>
+      <Image ImageFile="bandeau-06.png"/>
+      <Image ImageFile="bandeau-07.png"/>
+      <Image ImageFile="bandeau-08.png"/>
+      <Image ImageFile="bandeau-09.png"/>
+      <Image ImageFile="bandeau-10.png"/>
+      <Image ImageFile="bandeau-11.png"/>
+      <Image ImageFile="bandeau-12.png"/>
+      <Image ImageFile="bandeau-13.png"/>
+      <Image ImageFile="bandeau-14.png"/>
+      <Image ImageFile="bandeau-15.png"/>
+      <Image ImageFile="bandeau-16.png"/>
+      <Image ImageFile="bandeau-17.png"/>
+      <Image ImageFile="bandeau-18.png"/>
+      <Image ImageFile="bandeau-19.png"/>
+      <Image ImageFile="bandeau-20.png"/>
+      <Image ImageFile="bandeau-21.png"/>
+      <Image ImageFile="bandeau-22.png"/>
+      <Image ImageFile="bandeau-23.png"/>
+      <Image ImageFile="bandeau-24.png"/>
+      <Image ImageFile="bandeau-25.png"/>
+      <Image ImageFile="bandeau-26.png"/>
+      <Image ImageFile="bandeau-27.png"/>
+      <Image ImageFile="bandeau-28.png"/>
+      <Image ImageFile="bandeau-29.png"/>
+      <Image ImageFile="bandeau-30.png"/>
+      <Image ImageFile="bandeau-31.png"/>
+      <Image ImageFile="bandeau-32.png"/>
+      <Image ImageFile="bandeau-33.png"/>
+      <Image ImageFile="bandeau-34.png"/>
+    </Billboard>
+    <Image X="0" Y="31" Width="620" Height="129" ImageFile="deco-haut.png"/>
+    <Image X="24" Y="190" Width="3" Height="202" ImageFile="rail-gauche.png"/>
+    <Image X="593" Y="190" Width="11" Height="202" ImageFile="rail-droit.png"/>
+    <Image X="24" Y="392" Width="580" Height="12" ImageFile="cadre-bas.png"/>
+    <Text X="48" Y="212" Width="-48" Height="150" FontId="2" DisablePrefix="yes">#(loc.HelpText)</Text>
+    <Button Name="HelpCancelButton" X="-24" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-fermer.png">#(loc.HelpCloseButton)</Button>
+  </Page>
+
+  <Page Name="Install">
+    <Image X="24" Y="160" Width="572" Height="30" ImageFile="t-accueil.png"/>
+
+    <Billboard X="0" Y="0" Width="620" Height="31" Interval="55" Loop="yes">
+      <Image ImageFile="bandeau-00.png"/>
+      <Image ImageFile="bandeau-01.png"/>
+      <Image ImageFile="bandeau-02.png"/>
+      <Image ImageFile="bandeau-03.png"/>
+      <Image ImageFile="bandeau-04.png"/>
+      <Image ImageFile="bandeau-05.png"/>
+      <Image ImageFile="bandeau-06.png"/>
+      <Image ImageFile="bandeau-07.png"/>
+      <Image ImageFile="bandeau-08.png"/>
+      <Image ImageFile="bandeau-09.png"/>
+      <Image ImageFile="bandeau-10.png"/>
+      <Image ImageFile="bandeau-11.png"/>
+      <Image ImageFile="bandeau-12.png"/>
+      <Image ImageFile="bandeau-13.png"/>
+      <Image ImageFile="bandeau-14.png"/>
+      <Image ImageFile="bandeau-15.png"/>
+      <Image ImageFile="bandeau-16.png"/>
+      <Image ImageFile="bandeau-17.png"/>
+      <Image ImageFile="bandeau-18.png"/>
+      <Image ImageFile="bandeau-19.png"/>
+      <Image ImageFile="bandeau-20.png"/>
+      <Image ImageFile="bandeau-21.png"/>
+      <Image ImageFile="bandeau-22.png"/>
+      <Image ImageFile="bandeau-23.png"/>
+      <Image ImageFile="bandeau-24.png"/>
+      <Image ImageFile="bandeau-25.png"/>
+      <Image ImageFile="bandeau-26.png"/>
+      <Image ImageFile="bandeau-27.png"/>
+      <Image ImageFile="bandeau-28.png"/>
+      <Image ImageFile="bandeau-29.png"/>
+      <Image ImageFile="bandeau-30.png"/>
+      <Image ImageFile="bandeau-31.png"/>
+      <Image ImageFile="bandeau-32.png"/>
+      <Image ImageFile="bandeau-33.png"/>
+      <Image ImageFile="bandeau-34.png"/>
+    </Billboard>
+    <Image X="0" Y="31" Width="620" Height="129" ImageFile="deco-haut.png"/>
+    <Image X="24" Y="190" Width="3" Height="202" ImageFile="rail-gauche.png"/>
+    <Image X="593" Y="190" Width="11" Height="202" ImageFile="rail-droit.png"/>
+    <Image X="24" Y="392" Width="580" Height="12" ImageFile="cadre-bas.png"/>
+    <Text X="48" Y="212" Width="-48" Height="26" FontId="3" DisablePrefix="yes">#(loc.InstallHeader)</Text>
+    <Text X="48" Y="242" Width="-48" Height="48" FontId="1" DisablePrefix="yes">#(loc.PresentationTexte)</Text>
+    <Text X="48" Y="296" Width="-48" Height="36" FontId="2" DisablePrefix="yes">#(loc.OuTexte)</Text>
+    <Hypertext Name="EulaHyperlink" X="48" Y="336" Width="-48" Height="18" TabStop="yes" FontId="4" HideWhenDisabled="yes">#(loc.InstallLicenseLinkText)</Hypertext>
+    <Checkbox Name="EulaAcceptCheckbox" X="48" Y="354" Width="-48" Height="18" TabStop="yes" FontId="8" HideWhenDisabled="yes">#(loc.InstallAcceptCheckbox)</Checkbox>
+    <Button Name="OptionsButton" X="24" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-options.png" HideWhenDisabled="yes">#(loc.InstallOptionsButton)</Button>
+    <Button Name="WelcomeCancelButton" X="-206" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-annuler.png">#(loc.InstallCloseButton)</Button>
+    <Button Name="InstallButton" X="-24" Y="-16" Width="168" Height="44" TabStop="yes" FontId="1" ImageFile="b-installer.png">#(loc.InstallInstallButton)</Button>
+  </Page>
+
+  <Page Name="Options">
+    <Image X="24" Y="160" Width="572" Height="30" ImageFile="t-options.png"/>
+
+    <Billboard X="0" Y="0" Width="620" Height="31" Interval="55" Loop="yes">
+      <Image ImageFile="bandeau-00.png"/>
+      <Image ImageFile="bandeau-01.png"/>
+      <Image ImageFile="bandeau-02.png"/>
+      <Image ImageFile="bandeau-03.png"/>
+      <Image ImageFile="bandeau-04.png"/>
+      <Image ImageFile="bandeau-05.png"/>
+      <Image ImageFile="bandeau-06.png"/>
+      <Image ImageFile="bandeau-07.png"/>
+      <Image ImageFile="bandeau-08.png"/>
+      <Image ImageFile="bandeau-09.png"/>
+      <Image ImageFile="bandeau-10.png"/>
+      <Image ImageFile="bandeau-11.png"/>
+      <Image ImageFile="bandeau-12.png"/>
+      <Image ImageFile="bandeau-13.png"/>
+      <Image ImageFile="bandeau-14.png"/>
+      <Image ImageFile="bandeau-15.png"/>
+      <Image ImageFile="bandeau-16.png"/>
+      <Image ImageFile="bandeau-17.png"/>
+      <Image ImageFile="bandeau-18.png"/>
+      <Image ImageFile="bandeau-19.png"/>
+      <Image ImageFile="bandeau-20.png"/>
+      <Image ImageFile="bandeau-21.png"/>
+      <Image ImageFile="bandeau-22.png"/>
+      <Image ImageFile="bandeau-23.png"/>
+      <Image ImageFile="bandeau-24.png"/>
+      <Image ImageFile="bandeau-25.png"/>
+      <Image ImageFile="bandeau-26.png"/>
+      <Image ImageFile="bandeau-27.png"/>
+      <Image ImageFile="bandeau-28.png"/>
+      <Image ImageFile="bandeau-29.png"/>
+      <Image ImageFile="bandeau-30.png"/>
+      <Image ImageFile="bandeau-31.png"/>
+      <Image ImageFile="bandeau-32.png"/>
+      <Image ImageFile="bandeau-33.png"/>
+      <Image ImageFile="bandeau-34.png"/>
+    </Billboard>
+    <Image X="0" Y="31" Width="620" Height="129" ImageFile="deco-haut.png"/>
+    <Image X="24" Y="190" Width="3" Height="202" ImageFile="rail-gauche.png"/>
+    <Image X="593" Y="190" Width="11" Height="202" ImageFile="rail-droit.png"/>
+    <Image X="24" Y="392" Width="580" Height="12" ImageFile="cadre-bas.png"/>
+    <Text X="48" Y="212" Width="-48" Height="26" FontId="3" DisablePrefix="yes">#(loc.OptionsHeader)</Text>
+    <Text X="48" Y="246" Width="-48" Height="18" FontId="2" DisablePrefix="yes">#(loc.OptionsLocationLabel)</Text>
+    <Editbox Name="FolderEditbox" X="48" Y="270" Width="-198" Height="26" TabStop="yes" FontId="6" FileSystemAutoComplete="yes" />
+    <Button Name="BrowseButton" X="-48" Y="262" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-parcourir.png">#(loc.OptionsBrowseButton)</Button>
+
+    <Text X="48" Y="312" Width="-48" Height="60" FontId="2" DisablePrefix="yes">#(loc.OptionsNote)</Text>
+    <Button Name="OptionsCancelButton" X="-206" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-retour.png">#(loc.OptionsCancelButton)</Button>
+    <Button Name="OptionsOkButton" X="-24" Y="-16" Width="168" Height="44" TabStop="yes" FontId="1" ImageFile="b-valider.png">#(loc.OptionsOkButton)</Button>
+  </Page>
+
+  <Page Name="FilesInUse">
+    <Image X="24" Y="160" Width="572" Height="30" ImageFile="t-deja.png"/>
+
+    <Billboard X="0" Y="0" Width="620" Height="31" Interval="55" Loop="yes">
+      <Image ImageFile="bandeau-00.png"/>
+      <Image ImageFile="bandeau-01.png"/>
+      <Image ImageFile="bandeau-02.png"/>
+      <Image ImageFile="bandeau-03.png"/>
+      <Image ImageFile="bandeau-04.png"/>
+      <Image ImageFile="bandeau-05.png"/>
+      <Image ImageFile="bandeau-06.png"/>
+      <Image ImageFile="bandeau-07.png"/>
+      <Image ImageFile="bandeau-08.png"/>
+      <Image ImageFile="bandeau-09.png"/>
+      <Image ImageFile="bandeau-10.png"/>
+      <Image ImageFile="bandeau-11.png"/>
+      <Image ImageFile="bandeau-12.png"/>
+      <Image ImageFile="bandeau-13.png"/>
+      <Image ImageFile="bandeau-14.png"/>
+      <Image ImageFile="bandeau-15.png"/>
+      <Image ImageFile="bandeau-16.png"/>
+      <Image ImageFile="bandeau-17.png"/>
+      <Image ImageFile="bandeau-18.png"/>
+      <Image ImageFile="bandeau-19.png"/>
+      <Image ImageFile="bandeau-20.png"/>
+      <Image ImageFile="bandeau-21.png"/>
+      <Image ImageFile="bandeau-22.png"/>
+      <Image ImageFile="bandeau-23.png"/>
+      <Image ImageFile="bandeau-24.png"/>
+      <Image ImageFile="bandeau-25.png"/>
+      <Image ImageFile="bandeau-26.png"/>
+      <Image ImageFile="bandeau-27.png"/>
+      <Image ImageFile="bandeau-28.png"/>
+      <Image ImageFile="bandeau-29.png"/>
+      <Image ImageFile="bandeau-30.png"/>
+      <Image ImageFile="bandeau-31.png"/>
+      <Image ImageFile="bandeau-32.png"/>
+      <Image ImageFile="bandeau-33.png"/>
+      <Image ImageFile="bandeau-34.png"/>
+    </Billboard>
+    <Image X="0" Y="31" Width="620" Height="129" ImageFile="deco-haut.png"/>
+    <Image X="24" Y="190" Width="3" Height="202" ImageFile="rail-gauche.png"/>
+    <Image X="593" Y="190" Width="11" Height="202" ImageFile="rail-droit.png"/>
+    <Image X="24" Y="392" Width="580" Height="12" ImageFile="cadre-bas.png"/>
+    <Text X="48" Y="212" Width="-48" Height="26" FontId="3" DisablePrefix="yes">#(loc.FilesInUseHeader)</Text>
+    <Text X="48" Y="242" Width="-48" Height="32" FontId="1" DisablePrefix="yes">#(loc.FilesInUseLabel)</Text>
+    <Text Name="FilesInUseText" X="48" Y="276" Width="-48" Height="34" FontId="2" DisablePrefix="yes" HexStyle="0x0000C000"></Text>
+    <Button Name="FilesInUseCloseRadioButton" X="48" Y="314" Width="-48" Height="20" TabStop="yes" FontId="8" HideWhenDisabled="yes" HexStyle="0x000009">#(loc.FilesInUseCloseRadioButton)</Button>
+    <Button Name="FilesInUseDontCloseRadioButton" X="48" Y="336" Width="-48" Height="20" TabStop="yes" FontId="8" HideWhenDisabled="yes" HexStyle="0x000009">#(loc.FilesInUseDontCloseRadioButton)</Button>
+    <Button Name="FilesInUseCancelButton" X="-206" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-annuler.png">#(loc.FilesInUseCancelButton)</Button>
+    <Button Name="FilesInUseOkButton" X="-24" Y="-16" Width="168" Height="44" TabStop="yes" FontId="1" ImageFile="b-continuer.png" HideWhenDisabled="yes">#(loc.FilesInUseOkButton)</Button>
+  </Page>
+
+  <Page Name="Progress">
+    <Image X="24" Y="160" Width="572" Height="30" ImageFile="t-progres.png"/>
+
+    <Billboard X="0" Y="0" Width="620" Height="31" Interval="55" Loop="yes">
+      <Image ImageFile="bandeau-00.png"/>
+      <Image ImageFile="bandeau-01.png"/>
+      <Image ImageFile="bandeau-02.png"/>
+      <Image ImageFile="bandeau-03.png"/>
+      <Image ImageFile="bandeau-04.png"/>
+      <Image ImageFile="bandeau-05.png"/>
+      <Image ImageFile="bandeau-06.png"/>
+      <Image ImageFile="bandeau-07.png"/>
+      <Image ImageFile="bandeau-08.png"/>
+      <Image ImageFile="bandeau-09.png"/>
+      <Image ImageFile="bandeau-10.png"/>
+      <Image ImageFile="bandeau-11.png"/>
+      <Image ImageFile="bandeau-12.png"/>
+      <Image ImageFile="bandeau-13.png"/>
+      <Image ImageFile="bandeau-14.png"/>
+      <Image ImageFile="bandeau-15.png"/>
+      <Image ImageFile="bandeau-16.png"/>
+      <Image ImageFile="bandeau-17.png"/>
+      <Image ImageFile="bandeau-18.png"/>
+      <Image ImageFile="bandeau-19.png"/>
+      <Image ImageFile="bandeau-20.png"/>
+      <Image ImageFile="bandeau-21.png"/>
+      <Image ImageFile="bandeau-22.png"/>
+      <Image ImageFile="bandeau-23.png"/>
+      <Image ImageFile="bandeau-24.png"/>
+      <Image ImageFile="bandeau-25.png"/>
+      <Image ImageFile="bandeau-26.png"/>
+      <Image ImageFile="bandeau-27.png"/>
+      <Image ImageFile="bandeau-28.png"/>
+      <Image ImageFile="bandeau-29.png"/>
+      <Image ImageFile="bandeau-30.png"/>
+      <Image ImageFile="bandeau-31.png"/>
+      <Image ImageFile="bandeau-32.png"/>
+      <Image ImageFile="bandeau-33.png"/>
+      <Image ImageFile="bandeau-34.png"/>
+    </Billboard>
+    <Image X="0" Y="31" Width="620" Height="129" ImageFile="deco-haut.png"/>
+    <Image X="24" Y="190" Width="3" Height="202" ImageFile="rail-gauche.png"/>
+    <Image X="593" Y="190" Width="11" Height="202" ImageFile="rail-droit.png"/>
+    <Image X="24" Y="392" Width="580" Height="12" ImageFile="cadre-bas.png"/>
+    <Text X="48" Y="224" Width="-48" Height="26" FontId="3" DisablePrefix="yes">#(loc.ProgressHeader)</Text>
+    <Text Name="OverallProgressPackageText" X="48" Y="262" Width="-48" Height="18" FontId="8" DisablePrefix="yes">#(loc.OverallProgressPackageText)</Text>
+    <Progressbar Name="OverallCalculatedProgressbar" X="48" Y="288" Width="-48" Height="14" ImageFile="progres.png" />
+    <Text X="48" Y="316" Width="-48" Height="40" FontId="2" DisablePrefix="yes">#(loc.ProgressNote)</Text>
+    <Button Name="ProgressCancelButton" X="-24" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-annuler.png">#(loc.ProgressCancelButton)</Button>
+  </Page>
+
+  <Page Name="Modify">
+    <Image X="24" Y="160" Width="572" Height="30" ImageFile="t-deja.png"/>
+
+    <Billboard X="0" Y="0" Width="620" Height="31" Interval="55" Loop="yes">
+      <Image ImageFile="bandeau-00.png"/>
+      <Image ImageFile="bandeau-01.png"/>
+      <Image ImageFile="bandeau-02.png"/>
+      <Image ImageFile="bandeau-03.png"/>
+      <Image ImageFile="bandeau-04.png"/>
+      <Image ImageFile="bandeau-05.png"/>
+      <Image ImageFile="bandeau-06.png"/>
+      <Image ImageFile="bandeau-07.png"/>
+      <Image ImageFile="bandeau-08.png"/>
+      <Image ImageFile="bandeau-09.png"/>
+      <Image ImageFile="bandeau-10.png"/>
+      <Image ImageFile="bandeau-11.png"/>
+      <Image ImageFile="bandeau-12.png"/>
+      <Image ImageFile="bandeau-13.png"/>
+      <Image ImageFile="bandeau-14.png"/>
+      <Image ImageFile="bandeau-15.png"/>
+      <Image ImageFile="bandeau-16.png"/>
+      <Image ImageFile="bandeau-17.png"/>
+      <Image ImageFile="bandeau-18.png"/>
+      <Image ImageFile="bandeau-19.png"/>
+      <Image ImageFile="bandeau-20.png"/>
+      <Image ImageFile="bandeau-21.png"/>
+      <Image ImageFile="bandeau-22.png"/>
+      <Image ImageFile="bandeau-23.png"/>
+      <Image ImageFile="bandeau-24.png"/>
+      <Image ImageFile="bandeau-25.png"/>
+      <Image ImageFile="bandeau-26.png"/>
+      <Image ImageFile="bandeau-27.png"/>
+      <Image ImageFile="bandeau-28.png"/>
+      <Image ImageFile="bandeau-29.png"/>
+      <Image ImageFile="bandeau-30.png"/>
+      <Image ImageFile="bandeau-31.png"/>
+      <Image ImageFile="bandeau-32.png"/>
+      <Image ImageFile="bandeau-33.png"/>
+      <Image ImageFile="bandeau-34.png"/>
+    </Billboard>
+    <Image X="0" Y="31" Width="620" Height="129" ImageFile="deco-haut.png"/>
+    <Image X="24" Y="190" Width="3" Height="202" ImageFile="rail-gauche.png"/>
+    <Image X="593" Y="190" Width="11" Height="202" ImageFile="rail-droit.png"/>
+    <Image X="24" Y="392" Width="580" Height="12" ImageFile="cadre-bas.png"/>
+    <Text X="48" Y="212" Width="-48" Height="26" FontId="3" DisablePrefix="yes">#(loc.ModifyHeader)</Text>
+    <Text X="48" Y="246" Width="-48" Height="60" FontId="2" DisablePrefix="yes">#(loc.ModifyNote)</Text>
+    <Button Name="RepairButton" X="24" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-reparer.png" HideWhenDisabled="yes">#(loc.ModifyRepairButton)</Button>
+    <Button Name="ModifyCancelButton" X="-206" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-fermer.png">#(loc.ModifyCloseButton)</Button>
+    <Button Name="UninstallButton" X="-24" Y="-16" Width="168" Height="44" TabStop="yes" FontId="1" ImageFile="b-desinstaller.png">#(loc.ModifyUninstallButton)</Button>
+  </Page>
+
+  <Page Name="Success">
+    <Image X="24" Y="160" Width="572" Height="30" ImageFile="t-fin.png"/>
+
+    <Billboard X="0" Y="0" Width="620" Height="31" Interval="55" Loop="yes">
+      <Image ImageFile="bandeau-00.png"/>
+      <Image ImageFile="bandeau-01.png"/>
+      <Image ImageFile="bandeau-02.png"/>
+      <Image ImageFile="bandeau-03.png"/>
+      <Image ImageFile="bandeau-04.png"/>
+      <Image ImageFile="bandeau-05.png"/>
+      <Image ImageFile="bandeau-06.png"/>
+      <Image ImageFile="bandeau-07.png"/>
+      <Image ImageFile="bandeau-08.png"/>
+      <Image ImageFile="bandeau-09.png"/>
+      <Image ImageFile="bandeau-10.png"/>
+      <Image ImageFile="bandeau-11.png"/>
+      <Image ImageFile="bandeau-12.png"/>
+      <Image ImageFile="bandeau-13.png"/>
+      <Image ImageFile="bandeau-14.png"/>
+      <Image ImageFile="bandeau-15.png"/>
+      <Image ImageFile="bandeau-16.png"/>
+      <Image ImageFile="bandeau-17.png"/>
+      <Image ImageFile="bandeau-18.png"/>
+      <Image ImageFile="bandeau-19.png"/>
+      <Image ImageFile="bandeau-20.png"/>
+      <Image ImageFile="bandeau-21.png"/>
+      <Image ImageFile="bandeau-22.png"/>
+      <Image ImageFile="bandeau-23.png"/>
+      <Image ImageFile="bandeau-24.png"/>
+      <Image ImageFile="bandeau-25.png"/>
+      <Image ImageFile="bandeau-26.png"/>
+      <Image ImageFile="bandeau-27.png"/>
+      <Image ImageFile="bandeau-28.png"/>
+      <Image ImageFile="bandeau-29.png"/>
+      <Image ImageFile="bandeau-30.png"/>
+      <Image ImageFile="bandeau-31.png"/>
+      <Image ImageFile="bandeau-32.png"/>
+      <Image ImageFile="bandeau-33.png"/>
+      <Image ImageFile="bandeau-34.png"/>
+    </Billboard>
+    <Image X="0" Y="31" Width="620" Height="129" ImageFile="deco-haut.png"/>
+    <Image X="24" Y="190" Width="3" Height="202" ImageFile="rail-gauche.png"/>
+    <Image X="593" Y="190" Width="11" Height="202" ImageFile="rail-droit.png"/>
+    <Image X="24" Y="392" Width="580" Height="12" ImageFile="cadre-bas.png"/>
+    <Text Name="SuccessHeader" X="48" Y="220" Width="-48" Height="28" FontId="3" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.SuccessHeader)</Text>
+    <Text Name="SuccessInstallHeader" X="48" Y="220" Width="-48" Height="28" FontId="3" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.SuccessInstallHeader)</Text>
+    <Text Name="SuccessRepairHeader" X="48" Y="220" Width="-48" Height="28" FontId="3" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.SuccessRepairHeader)</Text>
+    <Text Name="SuccessUninstallHeader" X="48" Y="220" Width="-48" Height="28" FontId="3" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.SuccessUninstallHeader)</Text>
+    <Text X="48" Y="256" Width="-48" Height="22" FontId="2" DisablePrefix="yes">#(loc.SuccessNote)</Text>
+    <Hyperlink X="48" Y="290" Width="-48" Height="22" FontId="9" HoverFontId="10" SelectedFontId="10" TabStop="yes">#(loc.SuccessServeurLink)</Hyperlink>
+    <Text Name="SuccessRestartText" X="48" Y="340" Width="-48" Height="30" FontId="2" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.SuccessRestartText)</Text>
+    <Button Name="LaunchButton" X="-24" Y="-16" Width="168" Height="44" TabStop="yes" FontId="1" ImageFile="b-lancer.png" HideWhenDisabled="yes">#(loc.SuccessLaunchButton)</Button>
+    <Button Name="SuccessCancelButton" X="-206" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-fermer.png">#(loc.SuccessCloseButton)</Button>
+    <Button Name="SuccessRestartButton" X="-24" Y="-16" Width="168" Height="44" TabStop="yes" FontId="1" ImageFile="b-redemarrer.png" HideWhenDisabled="yes">#(loc.SuccessRestartButton)</Button>
+  </Page>
+
+  <Page Name="Failure">
+    <Image X="24" Y="160" Width="572" Height="30" ImageFile="t-rate.png"/>
+
+    <Billboard X="0" Y="0" Width="620" Height="31" Interval="55" Loop="yes">
+      <Image ImageFile="bandeau-00.png"/>
+      <Image ImageFile="bandeau-01.png"/>
+      <Image ImageFile="bandeau-02.png"/>
+      <Image ImageFile="bandeau-03.png"/>
+      <Image ImageFile="bandeau-04.png"/>
+      <Image ImageFile="bandeau-05.png"/>
+      <Image ImageFile="bandeau-06.png"/>
+      <Image ImageFile="bandeau-07.png"/>
+      <Image ImageFile="bandeau-08.png"/>
+      <Image ImageFile="bandeau-09.png"/>
+      <Image ImageFile="bandeau-10.png"/>
+      <Image ImageFile="bandeau-11.png"/>
+      <Image ImageFile="bandeau-12.png"/>
+      <Image ImageFile="bandeau-13.png"/>
+      <Image ImageFile="bandeau-14.png"/>
+      <Image ImageFile="bandeau-15.png"/>
+      <Image ImageFile="bandeau-16.png"/>
+      <Image ImageFile="bandeau-17.png"/>
+      <Image ImageFile="bandeau-18.png"/>
+      <Image ImageFile="bandeau-19.png"/>
+      <Image ImageFile="bandeau-20.png"/>
+      <Image ImageFile="bandeau-21.png"/>
+      <Image ImageFile="bandeau-22.png"/>
+      <Image ImageFile="bandeau-23.png"/>
+      <Image ImageFile="bandeau-24.png"/>
+      <Image ImageFile="bandeau-25.png"/>
+      <Image ImageFile="bandeau-26.png"/>
+      <Image ImageFile="bandeau-27.png"/>
+      <Image ImageFile="bandeau-28.png"/>
+      <Image ImageFile="bandeau-29.png"/>
+      <Image ImageFile="bandeau-30.png"/>
+      <Image ImageFile="bandeau-31.png"/>
+      <Image ImageFile="bandeau-32.png"/>
+      <Image ImageFile="bandeau-33.png"/>
+      <Image ImageFile="bandeau-34.png"/>
+    </Billboard>
+    <Image X="0" Y="31" Width="620" Height="129" ImageFile="deco-haut.png"/>
+    <Image X="24" Y="190" Width="3" Height="202" ImageFile="rail-gauche.png"/>
+    <Image X="593" Y="190" Width="11" Height="202" ImageFile="rail-droit.png"/>
+    <Image X="24" Y="392" Width="580" Height="12" ImageFile="cadre-bas.png"/>
+    <Text Name="FailureHeader" X="48" Y="214" Width="-48" Height="28" FontId="3" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.FailureHeader)</Text>
+    <Text Name="FailureInstallHeader" X="48" Y="214" Width="-48" Height="28" FontId="3" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.FailureInstallHeader)</Text>
+    <Text Name="FailureUninstallHeader" X="48" Y="214" Width="-48" Height="28" FontId="3" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.FailureUninstallHeader)</Text>
+    <Text Name="FailureRepairHeader" X="48" Y="214" Width="-48" Height="28" FontId="3" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.FailureRepairHeader)</Text>
+    <Hypertext Name="FailureLogFileLink" X="48" Y="250" Width="-48" Height="34" FontId="4" TabStop="yes" HideWhenDisabled="yes">#(loc.FailureHyperlinkLogText)</Hypertext>
+    <Hypertext Name="FailureMessageText" X="48" Y="288" Width="-48" Height="52" FontId="5" TabStop="yes" HideWhenDisabled="yes" />
+    <Text Name="FailureRestartText" X="48" Y="342" Width="-48" Height="28" FontId="2" HideWhenDisabled="yes" DisablePrefix="yes">#(loc.FailureRestartText)</Text>
+    <Button Name="FailureCloseButton" X="-206" Y="-16" Width="126" Height="44" TabStop="yes" FontId="1" ImageFile="d-fermer.png">#(loc.FailureCloseButton)</Button>
+    <Button Name="FailureRestartButton" X="-24" Y="-16" Width="168" Height="44" TabStop="yes" FontId="1" ImageFile="b-redemarrer.png" HideWhenDisabled="yes">#(loc.FailureRestartButton)</Button>
+  </Page>
+</Theme>

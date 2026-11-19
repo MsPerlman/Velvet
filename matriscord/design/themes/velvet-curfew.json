@@ -1,0 +1,25 @@
+{
+  "name": "Velvet Curfew",
+  "dark": true,
+  "colors": {
+    "background": "#151311",
+    "surface": "#1C1917",
+    "surfaceRaised": "#2A2321",
+    "chatBackground": "#131110",
+    "border": "#2E2724",
+    "accent": "#7A3D4C",
+    "accentMuted": "#4B262F",
+    "textPrimary": "#EED3BA",
+    "textSecondary": "#C4AC97",
+    "textMuted": "#8C7A6C",
+    "unreadBadge": "#7A3D4C",
+    "unreadDot": "#EED3BA",
+    "mentionHighlight": "#2A211A",
+    "mentionBar": "#EED3BA",
+    "traitCitation": "#3A322E",
+    "danger": "#E0575B",
+    "warning": "#D9A441",
+    "success": "#3FB950",
+    "scrimAlpha": 0.7
+  }
+}

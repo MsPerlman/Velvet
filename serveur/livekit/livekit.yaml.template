@@ -1,0 +1,27 @@
+
+port: 7880
+
+rtc:
+  udp_port: 7882
+
+  use_external_ip: true
+
+  turn_servers:
+    - host: turn.cloudflare.com
+      port: 443
+      protocol: tls
+      username: "@TURN_USER@"
+      credential: "@TURN_CRED@"
+    - host: turn.cloudflare.com
+      port: 3478
+      protocol: udp
+      username: "@TURN_USER@"
+      credential: "@TURN_CRED@"
+
+room:
+  auto_create: true
+  max_participants: 20
+  empty_timeout: 300
+
+logging:
+  level: info

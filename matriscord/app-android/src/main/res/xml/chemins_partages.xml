@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<paths>
+    <cache-path name="avatars" path="avatars/" />
+
+    <cache-path name="journaux" path="journaux/" />
+
+    <cache-path name="envois" path="envois/" />
+</paths>

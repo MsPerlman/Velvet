@@ -1,0 +1,8 @@
+{
+  "name": "Violet",
+  "colors": {
+    "accent": "#8B7BD8",
+    "accentMuted": "#6558A6",
+    "unreadBadge": "#8B7BD8"
+  }
+}

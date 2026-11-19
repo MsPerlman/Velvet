@@ -1,0 +1,112 @@
+velvet / velvetdesk
+copyright (c) 2026 the velvet authors
+
+this program is free software: you can redistribute it and/or modify it under the terms of
+the GNU Affero General Public License as published by the Free Software Foundation, either
+version 3 of the License, or (at your option) any later version.
+
+this program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+see the GNU Affero General Public License for more details. you should have received a copy
+along with this program, in LICENSE. if not, see <https://www.gnu.org/licenses/>.
+
+
+what this repository redistributes, and under what terms
+--------------------------------------------------------
+
+twemoji
+    app-android/src/main/res/font/twemoji.ttf
+    app-desktop/src/main/resources/polices/twemoji.ttf
+
+    "twemoji mozilla" 0.7.0, a COLR/CPAL build of the twemoji artwork.
+    copyright (c) twitter, inc and other contributors.
+    licensed under CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>.
+
+    the attribution is required, and it is also carried inside the app, on the "about"
+    screen. the font's internal `name` record keeps the original credit line: do not strip
+    it, that would be the one way of breaking the licence.
+
+phosphor icons
+    the kotlin vector paths in ui-commun/.../Icones.kt are generated from phosphor's svgs.
+    copyright (c) 2023 phosphor icons. licensed under the MIT licence
+    <https://github.com/phosphor-icons/homepage/blob/master/LICENSE>.
+    also credited on the app's "about" screen.
+
+chakra petch, pirata one, vt323
+    app-desktop/installeur/polices/, the installer's fonts. SIL open font licence 1.1, the
+    text is next to them in OFL.txt.
+
+
+what this repository depends on but does not ship
+-------------------------------------------------
+
+resolved from maven at build time, each under its own licence. listed because knowing what
+a thing is built out of is part of knowing what it is.
+
+    matrix-rust-sdk (org.matrix.rustcomponents:sdk-android)   apache-2.0
+    livekit android client sdk                                apache-2.0
+    kotlin, kotlinx coroutines, kotlinx serialization          apache-2.0
+    jetpack compose, androidx                                  apache-2.0
+    compose multiplatform (jetbrains)                          apache-2.0
+    jna, jna-platform                                          apache-2.0 / LGPL-2.1
+    concentus (opus in pure java)                              BSD-3-clause
+    okhttp                                                     apache-2.0
+    firebase cloud messaging (android sdk)                     apache-2.0
+    penfeizhou apng decoder                                    apache-2.0
+
+
+what the windows installer carries
+----------------------------------
+
+velvetdesk ships a piece of gstreamer, twenty eight files and fourteen megabytes, taken
+unmodified from the official windows build. it is the subset the screen share loads and
+nothing more, relevee by running the pipelines and reading the process' modules; the list
+lives in `tools/gstreamer-embarque.ps1`, which is also what puts it in place.
+
+    gstreamer (core, base, good, bad)                          LGPL-2.1-or-later
+
+it is there because windows graphics capture, the thing that lets you share one window
+rather than the rectangle of desktop it sits on, is a winrt api. ffmpeg does not expose it
+and the jvm cannot call it. gstreamer does, and velvet does not link against it: it runs
+`gst-launch-1.0` as a separate process and reads raw frames from its output.
+
+LGPL asks that the library stay replaceable, and it does. the files sit beside the
+installed application, in their own directory, and velvet uses whatever is there. sources
+and the licence text: https://gstreamer.freedesktop.org/
+
+
+what this repository deliberately does not contain
+--------------------------------------------------
+
+`gg sans`, discord's interface font. four weights are looked up by name in
+`PoliceAndroid.kt` and by the desktop resource loader, and none of the four files is here:
+the font belongs to discord and is redistributable under no condition. both sides resolve
+them at runtime and fall back to the system font when they are absent, saying so in the log,
+so a fresh clone builds and runs — it simply does not look like the reference until someone
+drops their own copy into `res/font/` and `resources/polices/`. the free substitution is
+named in `PoliceAndroid.kt`: inter, under the SIL open font licence.
+
+discord's shop artwork — the avatar decorations, profile effects and nameplates the app can
+wear. they are downloaded by the owner of a homeserver into a catalogue room, they are not
+ours to hand on, and the scripts that fetch them are not published either.
+
+discord's interface itself. the layout, the spacing and the gestures were measured on
+screenshots and rebuilt; no asset, no code and no font was taken. the screenshots are not
+in this repository.
+
+the sound effects (joining and leaving a call, mute, deafen, the ringtone). where they came
+from was never written down, so they stay out. both apps look them up by name and play
+nothing when they are missing; drop your own .ogg files in `res/raw/` and
+`resources/sons/` under the names the code asks for.
+
+anything belonging to the people who run this. no conversation, no capture, no working
+document, no name. that is on purpose rather than by oversight.
+
+
+on the network clause
+---------------------
+
+the AGPL's section 13 is the reason it was chosen over the GPL. this is a chat server as
+much as it is an app: if you run a modified velvet for other people to talk on, they get to
+have your changes. that is the whole bargain, and it is the one that keeps a house from
+turning into somebody's product.

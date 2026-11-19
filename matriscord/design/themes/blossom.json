@@ -1,0 +1,28 @@
+{
+  "name": "Blossom",
+  "dark": false,
+  "colors": {
+    "background": "#FFDBED",
+    "surface": "#FFF0F7",
+    "surfaceRaised": "#FFFFFF",
+    "chatBackground": "#FFE6F1",
+    "border": "#F0C6DC",
+    "accent": "#F8769C",
+    "accentMuted": "#8E93CB",
+    "textPrimary": "#2A2333",
+    "textSecondary": "#5A5470",
+    "textMuted": "#8E93CB",
+    "unreadBadge": "#F8769C",
+    "unreadDot": "#2A2333",
+    "mentionHighlight": "#FFE9F1",
+    "mentionBar": "#8E93CB",
+    "traitCitation": "#E4C3D6",
+    "danger": "#D7263D",
+    "warning": "#B5710A",
+    "success": "#1F8A4C",
+    "scrimAlpha": 0.45
+  },
+  "images": {
+    "chatBackgroundVeil": 0.6
+  }
+}

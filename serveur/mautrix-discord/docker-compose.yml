@@ -1,0 +1,21 @@
+services:
+  mautrix-discord:
+    build:
+      context: .
+      args:
+        MAUTRIX_DISCORD_TAG: v0.7.7
+    image: velvet/mautrix-discord:0.7.7-emoji
+    container_name: mautrix-discord
+    restart: unless-stopped
+    networks:
+      - proxy
+    volumes:
+      - ./data:/data
+    environment:
+      - UID=1000
+      - GID=1000
+
+networks:
+  proxy:
+    external: true
+    name: proxy
